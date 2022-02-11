@@ -18,10 +18,16 @@ else:
    print("las varibles son de diferente tipo")
 
 3. Para los valores enteros del 1 al 20, imprimir por pantalla si es par o impar
-i = 1
-while
+for n in range(1,21):
+   if (n%2 == 0):
+      print(n, " es Par")
+   else:
+      print(n, " es Impar")
 
 4. En un ciclo for mostrar para los valores entre 0 y 5 el resultado de elevarlo a la potencia igual a 3
+for n in range(0,6):
+   n_3 = n**3
+   print(n, "elevado al cubo es igual a ",n_3)
 
 5. Crear una variable que contenga un número entero y realizar un ciclo for la misma cantidad de ciclos
 
