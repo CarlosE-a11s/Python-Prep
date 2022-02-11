@@ -11,7 +11,7 @@ type(8.5)
 
 3. Imprimir el tipo de dato de la variable creada en el punto 1
 
-type('mi_entero)
+type('mi_entero')
 
 4. Crear una variable que contenga tu nombre
 
@@ -53,7 +53,7 @@ d = 132 + 25.4
 d1 = 132 +25,4j
 e = -25 +30j
 
-f = d + e
+f = d1 + e
 
 12. Realizar una operación de suma de un número real y otro complejo
 
@@ -64,7 +64,7 @@ h = mi_entero + e
 j = 345
 k = -13
 
-producto = j \* k
+print(j \* k)
 
 14. Mostrar el resultado de elevar 2 a la octava potencia
 
@@ -91,16 +91,48 @@ numerador27 = coc_entero\*4 + coc_resto
 
 19. Utilizar el operador "+" en una operación donde intervengan solo variables alfanuméricas
 
+21 = 'Mi '
+a22 = 'texto '
+a23 = 'concatenado '
+
+print(a21 + a22 + a23)
+
 20. Evaluar si "2" es igual a 2. ¿Por qué ocurre eso?
+
+Print("2" == 2) # False; porque son dartos de diferente tipo
 
 21. Utilizar las funciones de cambio de tipo de dato, para que la validación del punto 20 resulte verdadera
 
+print(int('2')==2)
+print('2' == str(2))
+
 22. ¿Por qué arroja error el siguiente cambio de tipo de datos? a = float('3,8')
+
+porque un float se escribe con . (punto)
 
 23. Crear una variable con el valor 3, y utilizar el operador '-=' para modificar su contenido
 
+x = 5
+x -= 2
+
+print(x) // 3
+
 24. Realizar la operacion 1 << 2 ¿Por qué da ese resultado? ¿Qué es el sistema de numeración binario?
+
+print(1<<2) // 4, porque esta desplazando cifras a laderecha en lenguajge de maquina (0,1).
+El sistema de numeracion binaria es el que muestra las cantidades de cualquier cosa mediante ceros y unos (0,1)
 
 25. Realizar la operación 2 + '2' ¿Por qué no está permitido? ¿Si los dos operandos serían del mismo tipo, siempre arrojaría el mismo resultado?
 
+2 + '2' no se permite porque son datos de diferente tipo
+
+al ser del mismo tipo , logocamente dan diferente resultado, asi:
+print('2' + '2') // 22
+print(2 + 2) // 4
+
 26. Realizar una operación válida entre valores de tipo entero y string
+
+a = 'Bienvenido !!'
+b = 3
+
+print(a\*b) // Bienvenido !!Bienvenido !!Bienvenido !!
