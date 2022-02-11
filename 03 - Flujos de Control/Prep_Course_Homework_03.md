@@ -1,9 +1,7 @@
 ## Flujos de Control
 
 1. Crear una variable que contenga un elemento del conjunto de números enteros y luego imprimir por pantalla si es mayor o menor a cero
-
 z = -10
-
 if (z > 0):
    print( "El número es mayor que Cero")
 elif (z < 0):
@@ -12,16 +10,16 @@ else:
    print( "el número es igual a Cero")
 
 2. Crear dos variables y un condicional que informe si son del mismo tipo de dato
-
 j = 2 + 3j
 h = "Datascience"
-
 if (type(j) == type(h)):
    print("las variables son del mismo tipo")
 else:
    print("las varibles son de diferente tipo")
 
 3. Para los valores enteros del 1 al 20, imprimir por pantalla si es par o impar
+i = 1
+while
 
 4. En un ciclo for mostrar para los valores entre 0 y 5 el resultado de elevarlo a la potencia igual a 3
 
