@@ -30,8 +30,25 @@ for n in range(0,6):
    print(n, "elevado al cubo es igual a ",n_3)
 
 5. Crear una variable que contenga un número entero y realizar un ciclo for la misma cantidad de ciclos
+d = 4
+for k in range(0,4):
+   pass
+print("Total Ciclos ",d)
 
-6. Utilizar un ciclo while para realizar el factoreo de un número guardado en una variable, sólo si la variable contiene un número entero mayor a 0
+6. Utilizar un ciclo while para realizar el factorial de un número guardado en una variable, sólo si la variable contiene un número entero mayor a 0
+f = 4
+if (type(f) == int):
+   if (f > 0):
+      a = f
+      factorial = f
+      while(f > 2):
+         f -=  1
+         factorial = factorial*f
+      print("El factorial de ",a, "es ",factorial)
+   else:
+      print("El dato en la variable no es mayor que cero")
+else:
+   print("El dato no es un entero")
 
 7. Crear un ciclo for dentro de un ciclo while
 
