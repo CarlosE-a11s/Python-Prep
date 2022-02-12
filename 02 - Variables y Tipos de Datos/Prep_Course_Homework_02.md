@@ -27,7 +27,7 @@ print(pi_redondeado)
 8. Crear una variable que contenga el valor 'True' y otra que contenga el valor True. ¿Se trata de lo mismo?
 a= 'True'
 b= True
-a == b # No se trata de lo mismo, pues a es string y b es boolean
+a == b // False.  No se trata de lo mismo, pues a es string y b es boolean
 
 9. Imprimir el tipo de dato correspondientes a las variables creadas en el punto 9
 type(a)
@@ -62,13 +62,13 @@ print(coc_entero)
 
 17. De la división de 27 entre 4 mostrar solamente el resto
 coc_resto = 27%4
-print(27%4)
+print(coc_resto))
 
 18. Utilizando como operandos el número 4 y los resultados obtenidos en los puntos 16 y 17. Obtener 27 como resultado
 numerador27 = coc_entero\*4 + coc_resto
 
 19. Utilizar el operador "+" en una operación donde intervengan solo variables alfanuméricas
-21 = 'Mi '
+a21 = 'Mi '
 a22 = 'texto '
 a23 = 'concatenado '
 print(a21 + a22 + a23)
@@ -101,4 +101,4 @@ print(2 + 2) // 4
 26. Realizar una operación válida entre valores de tipo entero y string
 a = 'Bienvenido !!'
 b = 3
-print(a\*b) // Bienvenido !!Bienvenido !!Bienvenido !!
+print(a*b) // Bienvenido !!Bienvenido !!Bienvenido !!
