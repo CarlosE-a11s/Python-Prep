@@ -51,8 +51,24 @@ else:
    print("El dato no es un entero")
 
 7. Crear un ciclo for dentro de un ciclo while
+cadena = "Henry"
+n= 0
+while (n < 3):
+   print("Ronda WHILE ", n+1)
+   for letra in (cadena):
+      print(letra)
+   print("Fin ronda FOR")
+   n += 1
 
 8. Crear un ciclo while dentro de un ciclo for
+j=3
+for i in range(1,j+1):
+   print("Ciclo FOR ", i)
+   n=1
+   while (n <= j):
+      print("ciclo WHILE ", n)
+      n +=1
+print("Esto es ", j, " 'ciclo while' dentro de ", j, "'ciclo for'")
 
 9. Imprimir los números primos existentes entre 0 y 30
 
