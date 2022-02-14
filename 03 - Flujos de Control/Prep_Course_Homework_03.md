@@ -71,7 +71,7 @@ for i in range(1,j+1):
 print("Esto es ", j, " 'ciclo while' dentro de ", j, "'ciclo for'")
 
 9. Imprimir los números primos existentes entre 0 y 30
-for n in range(0,31):
+for n in range(1,31): # el cero no se considera primo
    j = 2
    primo = True
    while (j < n):
@@ -82,10 +82,24 @@ for n in range(0,31):
       print(n, " es primo")
 
 10. ¿Se puede mejorar el proceso del punto 9? Utilizar las sentencias break y/ó continue para tal fin
+# En el ciclo 'while' no se necesita recorrer todos los numeros j menores que n para determinar si NO es primo, es suficiente encontrar un numero con resto cero para romper el ciclo con 'break' para mejorar el codigo, asI:
+# Nota: con el continue se queda en un bucle sin fin.
+for n in range(1,31):
+   j = 2
+   primo = True
+   while (j < n):
+      if (n % j == 0):
+         primo = False
+         break # con este break se mejora u optimiza el código
+      j += 1
+   if (primo):
+      print(n, " es primo") 
 
 11. En los puntos 9 y 10, se diseño un código que encuentra números primos y además se lo optimizó. ¿Es posible saber en qué medida se optimizó?
+# Es posible y se verifica con el tiempo de ejecución, en este caso, entre el código del pumto 9 el código del punto 10.
 
 12. Si la cantidad de números que se evalúa es mayor a treinta, esa optimización crece?
+# Logicamente. Cada vez que el numero es mayor por cada numero No primo se realiza solo una division de resto Cero con el código optimizado del punto 10.
 
 13. Aplicando continue, armar un ciclo while que solo imprima los valores divisibles por 12, dentro del rango de números de 100 a 300
 
