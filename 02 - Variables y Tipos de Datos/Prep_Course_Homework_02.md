@@ -27,7 +27,7 @@ print(pi_redondeado)
 8. Crear una variable que contenga el valor 'True' y otra que contenga el valor True. ¿Se trata de lo mismo?
 a= 'True'
 b= True
-a == b // False.  No se trata de lo mismo, pues a es string y b es boolean
+a == b # False.  No se trata de lo mismo, pues a es string y b es boolean
 
 9. Imprimir el tipo de dato correspondientes a las variables creadas en el punto 9
 type(a)
@@ -62,10 +62,10 @@ print(coc_entero)
 
 17. De la división de 27 entre 4 mostrar solamente el resto
 coc_resto = 27%4
-print(coc_resto))
+print(coc_resto)
 
 18. Utilizando como operandos el número 4 y los resultados obtenidos en los puntos 16 y 17. Obtener 27 como resultado
-numerador27 = coc_entero\*4 + coc_resto
+numerador27 = coc_entero*4 + coc_resto
 
 19. Utilizar el operador "+" en una operación donde intervengan solo variables alfanuméricas
 a21 = 'Mi '
@@ -86,19 +86,19 @@ Porque un float se escribe con . (punto)
 23. Crear una variable con el valor 3, y utilizar el operador '-=' para modificar su contenido
 x = 5
 x -= 2
-print(x) // 3
+print(x) # 3
 
 24. Realizar la operacion 1 << 2 ¿Por qué da ese resultado? ¿Qué es el sistema de numeración binario?
-print(1<<2) // 4, porque esta desplazando cifras a la derecha en lenguajge de maquina (0,1).
+print(1<<2) # 4, porque esta desplazando cifras a la derecha en lenguajge de maquina (0,1).
 El sistema de numeracion binaria es el que muestra las cantidades de cualquier cosa mediante ceros y unos (0,1)
 
 25. Realizar la operación 2 + '2' ¿Por qué no está permitido? ¿Si los dos operandos serían del mismo tipo, siempre arrojaría el mismo resultado?
 2 + '2' no se permite porque son datos de diferente tipo.
 Al ser del mismo tipo , lógicamente dan diferente resultado, asi:
-print('2' + '2') // 22
-print(2 + 2) // 4
+print('2' + '2') # 22
+print(2 + 2) # 4
 
 26. Realizar una operación válida entre valores de tipo entero y string
 a = 'Bienvenido !!'
 b = 3
-print(a*b) // Bienvenido !!Bienvenido !!Bienvenido !!
+print(a*b) # Bienvenido !!Bienvenido !!Bienvenido !!
