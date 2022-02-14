@@ -71,6 +71,15 @@ for i in range(1,j+1):
 print("Esto es ", j, " 'ciclo while' dentro de ", j, "'ciclo for'")
 
 9. Imprimir los números primos existentes entre 0 y 30
+for n in range(0,31):
+   j = 2
+   primo = True
+   while (j < n):
+      if (n % j == 0):
+         primo = False
+      j += 1
+   if (primo):
+      print(n, " es primo")
 
 10. ¿Se puede mejorar el proceso del punto 9? Utilizar las sentencias break y/ó continue para tal fin
 
