@@ -132,7 +132,7 @@ while (sigue == 1):
     else:
         primo = True
     n += 1
-    // este item se copio del homework resuleto para comprender lo de la función input
+    # este item se copio del homework resuleto para comprender lo de la función input()
 
 15. Crear un ciclo while que encuentre dentro del rango de 100 a 300 el primer número divisible por 3 y además múltiplo de 6
 min = 99
