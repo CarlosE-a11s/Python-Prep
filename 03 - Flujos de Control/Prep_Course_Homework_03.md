@@ -102,7 +102,44 @@ for n in range(1,31):
 # Logicamente. Cada vez que el numero es mayor por cada numero No primo se realiza solo una division de resto Cero con el código optimizado del punto 10.
 
 13. Aplicando continue, armar un ciclo while que solo imprima los valores divisibles por 12, dentro del rango de números de 100 a 300
+min = 99
+init = 100
+max = 300
+count = 0
+while (min <= max):
+   min += 1
+   if (min % 12 != 0):
+      continue
+   print(min, " es divisible por 12.")
+   count += 1
+print(f'Entre {init} y {max}, hay {count} números divisibles por 12')
 
 14. Utilizar la función **input()** que permite hacer ingresos por teclado, para encontrar números primos y dar la opción al usario de buscar el siguiente
+n = 1
+sigue = 1
+primo = True
+while (sigue == 1):
+    for div in range(2, n):
+        if (n % div == 0):
+            primo = False
+            break
+    if (primo):
+        print(n)
+        print('¿Desea encontrar el siguiente número primo?')
+        if (input() != '1'):
+            print('Se finaliza el proceso')
+            break
+    else:
+        primo = True
+    n += 1
+    // este item se copio del homework resuleto para comprender lo de la función input
 
 15. Crear un ciclo while que encuentre dentro del rango de 100 a 300 el primer número divisible por 3 y además múltiplo de 6
+min = 99
+max = 300
+while (min <= max):
+   min += 1
+   if (min % 3 == 0 and min % 6 == 0 ):
+      print(min, " es el primer numero divisible por 3 y multiplo de 6 \n en el rango de 100 a 300")
+      break
+
