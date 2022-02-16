@@ -62,15 +62,34 @@ print(aurea)
 
 10) A partir de la variable cadena ya dada, mostrar en qué posiciones aparece la letra "n"<br>
 cadena = 'Hola Mundo. Esto es una practica del lenguaje de programación Python'
+for i, e in enumerate(cadena):
+   if (e == 'n'):
+      print(i)
 
 11) Crear un diccionario e imprimir sus claves utilizando un iterador
+reino_animal = {'Acuatico' : ['delfin', 'cachalote', 'tiburon'], 'Terrestre' : ['caballo', 'elefante', 'llama'], 'Aereo' : ['aguila', 'paloma', 'gaviota']}
+for clase in reino_animal:
+   print(clase)
 
-12) Convertir en una lista la variable "cadena" del punto 10 y luego recorrerla con un iterador 
+12) Convertir en una lista la variable "cadena" del punto 10 y luego recorrerla con un iterador
+lista1 = list(cadena)
+print(lista1)
+for i in lista1:
+   print(i)
 
 13) Crear dos listas y unirlas en una tupla utilizando la función zip
+sigla = ['H', 'E', 'N', 'R', 'Y']
+significado = ['High', 'Earn', 'Not', 'Rich', 'Yet']
+academia = zip(sigla, significado)
+print(list(academia))
 
 14) A partir de la siguiente lista de números, crear una nueva sólo si el número es divisible por 7<br>
 lis = [18,21,29,32,35,42,56,60,63,71,84,90,91,100]
+lis_div7 = []
+for i in lis:
+   if ((i%7) == 0):
+      lis_div7.append(i)
+print(lis_div7)
 
 15) A partir de la lista de a continuación, contar la cantidad total de elementos que contiene, teniendo en cuenta que un elemento de la lista podría ser otra lista:<br>
 lis = [[1,2,3,4],'rojo','verde',[True,False,False],['uno','dos','tres']]
