@@ -68,7 +68,7 @@ tupla_numerica = (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20)
 print(tupla_numerica)
 
 17) Imprimir desde el índice 10 al 15 de la tupla
-print(tupla_numerica[10:15])
+print(tupla_numerica[10:16])
 
 18) Evaluar si los números 20 y 30 están dentro de la tupla
 print(20 in tupla_numerica) # True
@@ -98,8 +98,11 @@ print(elem_2)
 print(elem_3)
 
 23) Crear un diccionario utilizando la lista crada en el punto 1, asignandole la clave "ciudad". Agregar tambien otras claves, como puede ser "Pais" y "Continente".
-
+world_cities = ['Bogotá', 'Londres', 'Ciudad de México', 'Singapur', 'Oslo', 'Montreal', 'Ciudad del Cabo', 'El Cairo']
+world_cities_dicc = {'Ciudad' : world_cities, 'País' : ['Colombia', 'Inglaterra', 'México', 'Singapur', 'Noruega', 'Canada', 'Sudafrica', 'Egipto'], 'Continente' : ['Suramerica', 'Europa', 'Centroamerica', 'Asia', 'Europa', 'Norteamerica', 'Africa', 'Africa']}
 
 24) Imprimir las claves del diccionario
+print(world_cities_dicc.keys()) # dict_keys(['Ciudad', 'País', 'Continente'])
 
 25) Imprimir las ciudades a través de su clave
+print(world_cities_dicc['Ciudad'])
