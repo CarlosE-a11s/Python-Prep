@@ -1,10 +1,24 @@
 ## Iteradores e iterables
 
 1) A partir de una lista vacía, utilizar un ciclo while para cargar allí números negativos del -15 al -1
+lista_negativos = []
+inic = -15
+while (inic <= -1):
+   lista_negativos.append(inic)
+   inic += 1
+print(lista_negativos)
 
 2) ¿Con un ciclo while sería posible recorrer la lista para imprimir sólo los números pares?
+ind = 0
+while (ind < len(lista_negativos)):
+   if (lista_negativos[ind] % 2 == 0 ):
+      print(lista_negativos[ind])
+   ind += 1
 
 3) Resolver el punto anterior sin utilizar un ciclo while
+for i in lista_negativos:
+   if (lista_negativos[i] % 2 == 0 ):
+      print(lista_negativos[i])
 
 4) Utilizar el iterable para recorrer sólo los primeros 3 elementos
 
