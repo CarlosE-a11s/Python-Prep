@@ -74,8 +74,9 @@ for clase in reino_animal:
 12) Convertir en una lista la variable "cadena" del punto 10 y luego recorrerla con un iterador
 lista1 = list(cadena)
 print(lista1)
-for i in lista1:
-   print(i)
+caracter = iter(lista1)
+for i in range(1, len(lista1)+1):
+   print(next(caracter))
 
 13) Crear dos listas y unirlas en una tupla utilizando la función zip
 sigla = ['H', 'E', 'N', 'R', 'Y']
@@ -93,5 +94,18 @@ print(lis_div7)
 
 15) A partir de la lista de a continuación, contar la cantidad total de elementos que contiene, teniendo en cuenta que un elemento de la lista podría ser otra lista:<br>
 lis = [[1,2,3,4],'rojo','verde',[True,False,False],['uno','dos','tres']]
+register = 0
+for lista in lis:
+   register = register + len(lista)
+print(register)
 
 16) Tomar la lista del punto anterior y convertir cada elemento en una lista si no lo es
+lis = [[1,2,3,4],'rojo','verde',[True,False,False],['uno','dos','tres']]
+lis_convertida = []
+for es_lista in lis:
+   if (not type(es_lista) == list):
+      a = list(es_lista)
+      lis_convertida.append(a)
+   else:
+      lis_convertida.append(es_lista)
+print(lis_convertida)
