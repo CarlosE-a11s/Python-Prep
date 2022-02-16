@@ -40,8 +40,13 @@ n<sub>0</sub> = 0<br>
 n<sub>1</sub> = 1<br>
 n<sub>i</sub> = n<sub>i-1</sub> + n<sub>i-2</sub><br>
 Crear una lista con los primeros treinta números de la sucesión.<br>
+fibo = [0, 1]
+for i in range(1, 29):
+   fibo.append(fibo[i]+ fibo[i-1])
+print(fibo) 
 
 8) Realizar la suma de todos elementos de la lista del punto anterior
+print(sum(fibo))
 
 9) La proporción aurea se expresa con una proporción matemática que nace el número irracional Phi= 1,618… que los griegos llamaron número áureo. El cuál se puede aproximar con la sucesión de Fibonacci. Con la lista del ejercicio anterior, imprimir el cociente de los últimos 5 pares de dos números contiguos:<br>
 Donde i es la cantidad total de elementos<br>
@@ -50,7 +55,10 @@ n<sub>i-2</sub> / n<sub>i-1</sub><br>
 n<sub>i-3</sub> / n<sub>i-2</sub><br>
 n<sub>i-4</sub> / n<sub>i-3</sub><br>
 n<sub>i-5</sub> / n<sub>i-4</sub><br>
- 
+aurea = []
+for j in range(24,29):
+   aurea.append(fibo[j-1]/fibo[j])
+print(aurea) 
 
 10) A partir de la variable cadena ya dada, mostrar en qué posiciones aparece la letra "n"<br>
 cadena = 'Hola Mundo. Esto es una practica del lenguaje de programación Python'
