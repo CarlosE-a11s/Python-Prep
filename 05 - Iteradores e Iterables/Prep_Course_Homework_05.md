@@ -21,10 +21,19 @@ for i in lista_negativos:
       print(lista_negativos[i])
 
 4) Utilizar el iterable para recorrer sólo los primeros 3 elementos
+for num in lista_negativos[:3]:
+   print(num)
 
 5) Utilizar la función **enumerate** para obtener dentro del iterable, tambien el índice al que corresponde el elemento
+for i, num in enumerate(lista_negativos[:3]):
+   print(i, num)
 
-6) Dada la siguiente lista de números enteros entre 1 y 20, crear un ciclo donde se completen los valores faltantes: lista = [1,2,5,7,8,10,13,14,15,17,20]
+6) Dada la siguiente lista de números enteros entre 1 y 20, crear un ciclo donde se completen los valores faltantes: 
+lista = [1,2,5,7,8,10,13,14,15,17,20]
+for num in range(1,21):
+   if (not num in lista):
+      lista.insert((num-1), num)
+print(lista)
 
 7) La sucesión de Fibonacci es un listado de números que sigue la fórmula: <br>
 n<sub>0</sub> = 0<br>
