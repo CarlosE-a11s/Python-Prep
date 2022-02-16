@@ -64,20 +64,41 @@ print(last_city)
 print(world_cities * 4)
 
 16) Crear una tupla que contenga los números enteros del 1 al 20
+tupla_numerica = (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20)
+print(tupla_numerica)
 
 17) Imprimir desde el índice 10 al 15 de la tupla
+print(tupla_numerica[10:15])
 
 18) Evaluar si los números 20 y 30 están dentro de la tupla
+print(20 in tupla_numerica) # True
+print(30 in tupla_numerica) # False
 
 19) Con la lista creada en el punto 1, validar la existencia del elemento 'París' y si no existe, agregarlo. Utilizar una variable e informar lo sucedido.
+ciudad_existe = 'Paris'
+if ciudad_existe in world_cities:
+   print('la Ciudad ', ciudad_existe, ' ya está en la Lista')
+else:
+   world_cities.append('Paris')
+   print('la Ciudad ', ciudad_existe,' se agrego a la Lista')
+   print(world_cities)
 
 20) Mostrar la cantidad de veces que se encuentra un elemento específico dentro de la tupla y de la lista
+print(tupla_numerica.count(10))
+print(world_cities.count('Bogotá'))
 
 21) Convertir la tupla en una lista
+lista_1 = list(tupla_numerica)
+print(lista_1)
 
 22) Desempaquetar solo los primeros 3 elementos de la tupla en 3 variables
+elem_1, elem_2, elem_3, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = tupla_numerica
+print(elem_1) 
+print(elem_2)
+print(elem_3)
 
 23) Crear un diccionario utilizando la lista crada en el punto 1, asignandole la clave "ciudad". Agregar tambien otras claves, como puede ser "Pais" y "Continente".
+
 
 24) Imprimir las claves del diccionario
 
